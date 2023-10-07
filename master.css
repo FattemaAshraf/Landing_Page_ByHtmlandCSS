@@ -1,0 +1,48 @@
+.parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.user{
+    background-color: rgba(132, 132, 132, 0.399);
+    width: 50px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    height: 55.5px;
+    font-size: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+
+}
+.one{
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.one::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    right: -10px;
+    top: 0;
+    background-color: aqua;
+}
+.one::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-width: 10px;
+    border-color: transparent aqua transparent transparent;
+    border-style: solid;
+    left: -15px;
+    top: 50%;
+    margin-top: -10px;
+
+}
+
