@@ -402,3 +402,78 @@ footer{
 .gridd *{
   background-color: #607d8b;
 }
+
+
+#ArticleLayout{
+  display: grid;
+  background-color: #ddd;
+  padding: 20px 80px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,auto);
+  gap: 4px; 
+}
+
+#ArticleLayout .white{
+  background-color: white;
+}
+
+#ArticleLayout .art{
+  padding: 10px;
+  border-bottom: 2px solid orange;
+}
+.art-1{
+  grid-column: span 2;
+
+}
+
+#ArticleLayout p {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+#ArticleLayout .art h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+#ArticleLayout .art .title h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+#ArticleLayout .art .title {
+  margin-bottom: 20px;
+} 
+
+.art-3{
+  grid-row: span 3;
+  
+}
+.art-4{
+  grid-row: span 2;
+}
+.art-5{
+  grid-column: span 2;
+}
+.art-6{
+  grid-column: span 2;
+}
+
+#ArticleLayout .black{
+  background-color: black;
+  color: white;
+}
+
+#ArticleLayout div{
+  display: flex;
+  flex-direction: column;
+} 
+#ArticleLayout img{
+  width: 30px;
+  align-self: flex-end;
+  opacity: .6;
+  color: #607d8b;
+}
